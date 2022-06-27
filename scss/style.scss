@@ -63,32 +63,34 @@ $mw: 550px;
 		}
 }
 .place {
+font-family: 'Roboto';
 display: flex;
 align-items: center;
 justify-content: space-between;
 // background-color: #ECECEC;
 border-radius: 2px;
-padding: 19px 10px;
+// padding: 9px 10px;
 font-size: 28px;
-margin-bottom: 12px;
+// margin-bottom: 12px;
 		// .place__name
 
 		&__name {
 			display: flex;
 			align-items: center;
+			font-weight: 500;
 		}
 
 		// .place__img-anchor
 
 		&__img-anchor {
-			width: 22px;
-			height: 22px;
+			width: 24px;
+			height: 24px;
 		}
 
 		// .place__name-title
 
 		&__name-title {
-			margin-left: 6px;
+			margin-left: 10px;
 		}
 
 		// .place__date
@@ -101,20 +103,21 @@ margin-bottom: 12px;
 		// .place__img-ship
 
 		&__img-ship {
-			width: 39px;
-			height: 19px;
+			width: 55px;
+			height: 35px;
 		}
 
 		// .place__date-title
 
 		&__date-title {
-			margin-left: 6px;
+			margin-left: 10px;
 		}
 }
 .fuel {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-direction: column;
 	background-color: #E4F3FC;
 	border-radius: 2px;
 	padding: 29px 10px;
@@ -123,9 +126,14 @@ margin-bottom: 12px;
 	position: relative;
 	font-family: "Roboto";
 		// .fuel__name
-
+		&__block {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			margin-bottom: 24px;
+		}
 		&__name {
-			font-size: 32px;
+			font-size: 36px;
 			font-weight: 500;
 		}
 
@@ -159,16 +167,18 @@ margin-bottom: 12px;
 
 		&__price {
 			color: #DA2B2B;
-			font-size: 36px;
+			font-size: 40px;
 			font-weight: 500;
+			position: relative;
 		}
 		&__nds {
 			font-size: 14px;
 			position: absolute;
-			bottom: 6px;
-			right: 10px;
+			bottom: -14px;
+			right: 0;
 			font-family: "Roboto";
 			color: #878787;
+			width: 100px;
 		}
 }
 .currency {
@@ -176,14 +186,15 @@ margin-bottom: 12px;
 	flex-direction: column;
 	background-color: #ECECEC;
 	border-radius: 2px;
-	padding: 9px 10px;
+	padding: 12px 10px;
 	margin-bottom: 24px;
 		// .currency__info
 
 		&__info {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			font-size: 24px;
+			width: 100%;
 			// margin-bottom: 12px;
 		}
 
