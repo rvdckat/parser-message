@@ -1,0 +1,324 @@
+
+@import "_null.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700");
+
+$mw: 550px;
+
+.wrapper {
+    max-width: $mw;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #fff;
+	font-family: "Rubik";
+}
+._container {
+    
+    
+		}
+
+.header {
+
+		// .header__title
+
+		&__title {
+            background-color: #3ABA37;
+			color: #fff;
+			padding: 10px;
+			font-size: 24px;
+			font-weight: 500;
+			text-align: center;
+			margin-bottom: 12px;
+			border-radius: 2px;
+		}
+}
+.main {
+	// background-color: #E4F3FC;
+}
+.title {
+	// background-color: #E4F3FC;
+	padding: 9px 10px;
+	border-radius: 2px;
+	color: #DA2B2B;
+	// margin-bottom: 12px;
+	text-align: center;
+	font-size: 28px;
+}
+.autopark {
+	color: #1281C1;
+	margin-bottom: 12px;
+		// .autopark__title
+
+		&__title {
+			font-size: 24px;
+			text-align: center;
+		}
+
+		// .autopark__subtitle
+
+		&__subtitle {
+			font-size: 22px;
+			text-align: center;
+		}
+}
+.place {
+display: flex;
+align-items: center;
+justify-content: space-between;
+// background-color: #ECECEC;
+border-radius: 2px;
+padding: 19px 10px;
+font-size: 24px;
+margin-bottom: 12px;
+		// .place__name
+
+		&__name {
+			display: flex;
+			align-items: center;
+		}
+
+		// .place__img-anchor
+
+		&__img-anchor {
+			width: 22px;
+			height: 22px;
+		}
+
+		// .place__name-title
+
+		&__name-title {
+			margin-left: 6px;
+		}
+
+		// .place__date
+
+		&__date {
+			display: flex;
+			align-items: center;
+		}
+
+		// .place__img-ship
+
+		&__img-ship {
+			width: 39px;
+			height: 19px;
+		}
+
+		// .place__date-title
+
+		&__date-title {
+			margin-left: 6px;
+		}
+}
+.fuel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #E4F3FC;
+	border-radius: 2px;
+	padding: 29px 10px;
+	font-size: 24px;
+	margin-bottom: 12px;
+	position: relative;
+	font-family: "Roboto";
+		// .fuel__name
+
+		&__name {
+			font-size: 28px;
+			font-weight: 500;
+		}
+
+		// .fuel__temp
+
+		&__temp {
+			display: flex;
+			align-items: center;
+			background-color: #E4F3FC;
+			border-radius: 2px;
+			padding: 6px 9px;
+		}
+
+		// .fuel__temp-img
+
+		&__temp-img {
+
+		}
+
+		// .fuel__temp-val
+
+		&__temp-val {
+		}
+
+		// .fuel__temp-type
+
+		&__temp-type {
+		}
+
+		// .fuel__price
+
+		&__price {
+			color: #DA2B2B;
+			font-size: 36px;
+			font-weight: 500;
+		}
+		&__nds {
+			font-size: 14px;
+			position: absolute;
+			bottom: 6px;
+			right: 10px;
+			font-family: "Roboto";
+			color: #878787;
+		}
+}
+.currency {
+	display: flex;
+	flex-direction: column;
+	background-color: #ECECEC;
+	border-radius: 2px;
+	padding: 9px 10px;
+	margin-bottom: 24px;
+		// .currency__info
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			font-size: 20px;
+			// margin-bottom: 12px;
+		}
+
+		// .currency__country
+
+		&__country {
+			display: flex;
+			align-items: center;
+		}
+
+		// .currency__flag
+
+		&__flag {
+		}
+
+		// .currency__country-name
+
+		&__country-name {
+			margin-left: 6px;
+		}
+
+		// .currency__weather
+
+		&__weather {
+			display: flex;
+			align-items: center;
+		}
+
+		// .currency__t
+
+		&__t {
+			display: flex;
+			align-items: center;
+		}
+
+		// .currency__t-value
+
+		&__t-value {
+			margin-right: 6px;
+		}
+
+		// .currency__t-icon
+
+		&__t-icon {
+		}
+
+		// .currency__p
+
+		&__p {
+		}
+
+		// .currency__block
+
+		&__block {
+		}
+
+		// .currency__item
+
+		&__item {
+		}
+}
+.currency-title {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #878787;
+	margin-left: 20%;
+
+		// .currency-title__interbank
+
+		&__interbank {
+		}
+
+		// .currency-title__time
+
+		&__time {
+		}
+
+		// .currency-title__nbu
+
+		&__nbu {
+		}
+}
+.currency-subtitle {
+display: flex;
+justify-content: space-between;
+font-size: 18px;
+		// .currency-subtitle__title
+
+		&__title {
+			padding: 4px 8px;
+			border-radius: 2px;
+			background-color: #1281C1;
+			color: #E2E480;
+		}
+
+		// .currency-subtitle__value
+
+		&__value {
+		}
+
+		// .currency-subtitle__change
+
+		&__change {
+			display: flex;
+		}
+
+		// .currency-subtitle__change-num
+
+		&__change-num {
+		}
+
+		// .currency-subtitle__change-perc
+
+		&__change-perc {
+		}
+
+		// .currency-subtitle__nbu
+
+		&__nbu {
+			display: flex;
+			align-items: center;
+		}
+
+		// .currency-subtitle__nbu-value
+
+		&__nbu-value {
+			margin-right: 6px;
+		}
+
+		// .currency-subtitle__nbu-arrow
+
+		&__nbu-arrow {
+		}
+}
+
+
+

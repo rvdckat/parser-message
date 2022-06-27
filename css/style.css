@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]), a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Удаляем крестик в инпуте */
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.wrapper {
+  max-width: 550px;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "Rubik";
+}
+
+.header__title {
+  background-color: #3ABA37;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+
+.title {
+  padding: 9px 10px;
+  border-radius: 2px;
+  color: #DA2B2B;
+  text-align: center;
+  font-size: 28px;
+}
+
+.autopark {
+  color: #1281C1;
+  margin-bottom: 12px;
+}
+
+.autopark__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.autopark__subtitle {
+  font-size: 22px;
+  text-align: center;
+}
+
+.place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 2px;
+  padding: 19px 10px;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.place__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place__img-anchor {
+  width: 22px;
+  height: 22px;
+}
+
+.place__name-title {
+  margin-left: 6px;
+}
+
+.place__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place__img-ship {
+  width: 39px;
+  height: 19px;
+}
+
+.place__date-title {
+  margin-left: 6px;
+}
+
+.fuel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #E4F3FC;
+  border-radius: 2px;
+  padding: 29px 10px;
+  font-size: 24px;
+  margin-bottom: 12px;
+  position: relative;
+  font-family: "Roboto";
+}
+
+.fuel__name {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.fuel__temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E4F3FC;
+  border-radius: 2px;
+  padding: 6px 9px;
+}
+
+.fuel__price {
+  color: #DA2B2B;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.fuel__nds {
+  font-size: 14px;
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  font-family: "Roboto";
+  color: #878787;
+}
+
+.currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ECECEC;
+  border-radius: 2px;
+  padding: 9px 10px;
+  margin-bottom: 24px;
+}
+
+.currency__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+
+.currency__country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currency__country-name {
+  margin-left: 6px;
+}
+
+.currency__weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currency__t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currency__t-value {
+  margin-right: 6px;
+}
+
+.currency-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  color: #878787;
+  margin-left: 20%;
+}
+
+.currency-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+}
+
+.currency-subtitle__title {
+  padding: 4px 8px;
+  border-radius: 2px;
+  background-color: #1281C1;
+  color: #E2E480;
+}
+
+.currency-subtitle__change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.currency-subtitle__nbu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currency-subtitle__nbu-value {
+  margin-right: 6px;
+}
