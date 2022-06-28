@@ -48,11 +48,19 @@ $mw: 550px;
 .autopark {
 	color: #1281C1;
 	margin-bottom: 12px;
+	display: flex;
+	justify-content: center;
 		// .autopark__title
 
 		&__title {
 			font-size: 26px;
 			text-align: center;
+			display: flex;
+			align-items: center;
+			img {
+				width: 70px;
+				height: 30px;
+			}
 		}
 
 		// .autopark__subtitle
@@ -60,6 +68,8 @@ $mw: 550px;
 		&__subtitle {
 			font-size: 24px;
 			text-align: center;
+			margin-right: 10px;
+			color: #878787;
 		}
 }
 .place {
@@ -102,15 +112,15 @@ font-size: 28px;
 
 		// .place__img-ship
 
-		&__img-ship {
-			width: 55px;
-			height: 35px;
+		&__img-cal {
+			width: 30px;
+			height: 30px;
 		}
 
 		// .place__date-title
 
 		&__date-title {
-			margin-left: 10px;
+			margin-left: 2px;
 		}
 }
 .fuel {

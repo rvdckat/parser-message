@@ -135,16 +135,35 @@ input[type="search"]::-webkit-search-results-decoration {
 .autopark {
   color: #1281C1;
   margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .autopark__title {
   font-size: 26px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.autopark__title img {
+  width: 70px;
+  height: 30px;
 }
 
 .autopark__subtitle {
   font-size: 24px;
   text-align: center;
+  margin-right: 10px;
+  color: #878787;
 }
 
 .place {
@@ -190,13 +209,13 @@ input[type="search"]::-webkit-search-results-decoration {
           align-items: center;
 }
 
-.place__img-ship {
-  width: 55px;
-  height: 35px;
+.place__img-cal {
+  width: 30px;
+  height: 30px;
 }
 
 .place__date-title {
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .fuel {
